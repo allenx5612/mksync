@@ -87,6 +87,7 @@ func server() {
 	}
 }
 
+// Todo: set a 0 opacity dialog to block local input from keyboard and mouse
 func client() {
 	udpAddr, err := net.ResolveUDPAddr("udp4", addr)
 	conn, err := net.DialUDP("udp", nil, udpAddr)

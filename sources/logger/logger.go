@@ -2,7 +2,7 @@ package logger
 
 import (
 	"fmt"
-	"github.com/allenx5612/cboost/sources/execpath"
+	"github.com/allenx5612/mksync/sources/execpath"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -70,6 +70,6 @@ func InitLogger(logLevel string) (logger *zap.Logger) {
 }
 
 func SetLogger() (logger *zap.Logger) {
-	logger = InitLogger("warn")
+	logger = InitLogger("debug")
 	return logger
 }
